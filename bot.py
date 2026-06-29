@@ -124,7 +124,6 @@ CATALOGUE_TEXT = (
     f"        ༄.°   ──  Telegram premium\n"
     f"        ༄.°   ──  Telegram stars\n\n"
     f"             STUFFING  ⋆. 𐙚 ˚ : order weapon equipment items to the chairman. send your weapon order attachment to the admin ↺ {EC5}\n\n"
-    f"𝜗𝜚 ࣪˖ ִ𐙚   |  RIOTOUS ：CATALOGUE {E3}"
 )
 
 PRICELIST_TEXT = (
@@ -227,8 +226,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ fix price &amp; nett price ⌲ \n"
         f" ૮◟ detail ⌲ ( nomin/min, avneg, avail nyicil, keep wdp ) \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"KETERANGAN : #READY\n\n"
         f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
+        f"KETERANGAN : #READY\n\n"
     ),
     "jastip_nokprem": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP NOKPREM\n"
@@ -238,8 +237,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"KETERANGAN : #READY\n\n"
         f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
+        f"KETERANGAN : #READY\n\n"
     ),
     "jastip_acc_inc": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP ACC INC GIFT LIMITED\n"
@@ -249,8 +248,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include &amp; detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"KETERANGAN : #READY\n\n"
         f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
+        f"KETERANGAN : #READY\n\n"
     ),
     "jastip_ch_store": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP CHANNEL STORE\n"
@@ -263,8 +262,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include &amp; detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"KETERANGAN : #READY\n\n"
         f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
+        f"KETERANGAN : #READY\n\n"
     ),
     "jastip_ch_pribadi": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP CHANNEL PRIBADI\n"
@@ -276,8 +275,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include &amp; detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"KETERANGAN : #READY\n\n"
         f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
+        f"KETERANGAN : #READY\n\n"
     ),
     "jastip_gc_ress": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP GC RESSELLER\n"
@@ -290,8 +289,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include &amp; detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"KETERANGAN : #READY\n\n"
         f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
+        f"KETERANGAN : #READY\n\n"
     ),
     "jastip_acc_game": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP ACC GAME\n"
@@ -301,8 +300,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include &amp; detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"KETERANGAN : #READY\n\n"
         f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
+        f"KETERANGAN : #READY\n\n"
     ),
     "jastip_acc_sosmed": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP ACC SOSMED\n"
@@ -312,8 +311,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"KETERANGAN : #READY\n\n"
         f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
+        f"KETERANGAN : #READY\n\n"
     ),
     "jaseb_gift": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASEB OFFER GIFT UPGRADE\n"
