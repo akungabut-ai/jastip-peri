@@ -124,7 +124,6 @@ CATALOGUE_TEXT = (
     f"        ༄.°   ──  Telegram premium\n"
     f"        ༄.°   ──  Telegram stars\n\n"
     f"             STUFFING  ⋆. 𐙚 ˚ : order weapon equipment items to the chairman. send your weapon order attachment to the admin ↺ {EC5}\n\n"
-    f"𝜗𝜚 ࣪˖ ִ𐙚   |  RIOTOUS ：CATALOGUE {E3}"
 )
 
 PRICELIST_TEXT = (
