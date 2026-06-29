@@ -629,11 +629,17 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def receive_order(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
-    Diteruskan ke grup setiap user kirim pesan teks di private chat.
+    Diteruskan ke grup setiap user kirim PESAN APAPUN (teks, foto, video,
+    dokumen, voice, sticker, dll) di private chat.
+
     - Kalau user sebelumnya klik tombol format (waiting_order == True),
       pesan dilabeli sebagai ORDER MASUK.
-    - Kalau user kirim pesan bebas tanpa pilih format dulu (misal nanya2),
+    - Kalau user kirim pesan/media bebas tanpa pilih format dulu,
       pesan dilabeli sebagai PESAN MASUK / PERTANYAAN.
+
+    Menggunakan copy_message supaya semua jenis media (foto, video,
+    dokumen, voice note, sticker, dst) otomatis ikut diteruskan tanpa
+    perlu dicek satu-satu tipenya.
     """
     user = update.effective_user
     message = update.message
@@ -653,16 +659,27 @@ async def receive_order(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"👤 Nama: {nama}\n"
         f"📱 Username: {username}\n"
         f"🆔 User ID: <code>{user.id}</code>\n"
-        f"─────────────────\n\n"
+        f"─────────────────"
     )
 
     try:
-        sent = await context.bot.send_message(
+        # Header dikirim sebagai pesan terpisah supaya konteksnya jelas di grup
+        await context.bot.send_message(
             chat_id=GROUP_ID,
-            text=header + message.text,
+            text=header,
             parse_mode="HTML",
         )
-        order_message_map[sent.message_id] = user.id
+        # copy_message otomatis menangani SEMUA tipe konten:
+        # teks, foto, video, dokumen, voice note, sticker, audio, dll —
+        # tanpa perlu cek if message.photo / message.video / dst satu-satu.
+        copied = await context.bot.copy_message(
+            chat_id=GROUP_ID,
+            from_chat_id=message.chat_id,
+            message_id=message.message_id,
+        )
+        # Simpan mapping berdasarkan message_id HASIL COPY di grup,
+        # supaya saat admin reply ke pesan ini, kita tau harus balas ke siapa.
+        order_message_map[copied.message_id] = user.id
     except Exception as e:
         print(f"❌ Gagal kirim ke grup: {e}")
         await update.message.reply_text(
@@ -694,6 +711,12 @@ async def receive_order(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def receive_admin_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """
+    Saat admin di grup mereply pesan (teks ATAU media) yang sebelumnya
+    diteruskan dari user, balasan tersebut diteruskan kembali ke user.
+    Pakai copy_message juga, supaya admin bisa balas dengan foto/video/dokumen
+    sekalipun, bukan cuma teks.
+    """
     message = update.message
 
     if message.chat_id != GROUP_ID:
@@ -707,17 +730,31 @@ async def receive_admin_reply(update: Update, context: ContextTypes.DEFAULT_TYPE
     if not target_user_id:
         return
 
-    await context.bot.send_message(
-        chat_id=target_user_id,
-        text=(
-            f"💌 <b>Balasan dari Admin Jastip Peri</b>\n"
-            f"─────────────────\n\n"
-            f"{message.text}\n\n"
-            f"─────────────────\n"
-            f"<i>Jika ada pertanyaan, jangan ragu tanya lagi ya Kak!</i> {E3}"
-        ),
-        parse_mode="HTML",
-    )
+    try:
+        # Header info dulu ke user
+        await context.bot.send_message(
+            chat_id=target_user_id,
+            text=(
+                f"💌 <b>Balasan dari Admin Jastip Peri</b>\n"
+                f"─────────────────"
+            ),
+            parse_mode="HTML",
+        )
+        # Lalu copy isi pesan admin (teks/foto/video/dokumen/dll) ke user
+        await context.bot.copy_message(
+            chat_id=target_user_id,
+            from_chat_id=message.chat_id,
+            message_id=message.message_id,
+        )
+        await context.bot.send_message(
+            chat_id=target_user_id,
+            text=f"─────────────────\n<i>Jika ada pertanyaan, jangan ragu tanya lagi ya Kak!</i> {E3}",
+            parse_mode="HTML",
+        )
+    except Exception as e:
+        print(f"❌ Gagal kirim balasan ke user: {e}")
+        await message.reply_text(f"⚠️ Gagal mengirim balasan ke user: {e}")
+        return
 
     await message.reply_text("✅ Pesan sudah terkirim ke user!")
 
@@ -754,12 +791,15 @@ def main():
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(button_handler))
+    # Menangkap SEMUA jenis pesan dari user di private chat (teks, foto, video,
+    # dokumen, voice, sticker, audio, dll), kecuali command (/start dst).
     app.add_handler(MessageHandler(
-        filters.TEXT & ~filters.COMMAND & filters.ChatType.PRIVATE,
+        filters.ALL & ~filters.COMMAND & filters.ChatType.PRIVATE,
         receive_order
     ))
+    # Menangkap reply admin di grup, baik berupa teks maupun media.
     app.add_handler(MessageHandler(
-        filters.TEXT & ~filters.COMMAND & filters.Chat(GROUP_ID) & filters.REPLY,
+        filters.ALL & ~filters.COMMAND & filters.Chat(GROUP_ID) & filters.REPLY,
         receive_admin_reply
     ))
     app.add_error_handler(error_handler)
