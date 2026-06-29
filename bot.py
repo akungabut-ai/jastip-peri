@@ -6,9 +6,17 @@ import asyncio
 import sys
 
 # ============================================================
-#   GANTI INI DENGAN TOKEN BOT KAMU DARI @BotFather
+#   TOKEN BOT — dibaca dari Environment Variable "BOT_TOKEN"
+#   Di Railway: Settings > Variables > tambahkan BOT_TOKEN
+#   Untuk testing lokal, bisa juga pakai file .env (lihat README)
 # ============================================================
-BOT_TOKEN = "8676981563:AAHvQDFTaW9ML-dtpoO5BnAN2CBpaSE7298"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+
+if not BOT_TOKEN:
+    raise RuntimeError(
+        "BOT_TOKEN belum diset! "
+        "Set environment variable BOT_TOKEN dengan token dari @BotFather."
+    )
 
 # ============================================================
 #   Group ID orderan & Channel username
@@ -116,6 +124,7 @@ CATALOGUE_TEXT = (
     f"        ༄.°   ──  Telegram premium\n"
     f"        ༄.°   ──  Telegram stars\n\n"
     f"             STUFFING  ⋆. 𐙚 ˚ : order weapon equipment items to the chairman. send your weapon order attachment to the admin ↺ {EC5}\n\n"
+    f"𝜗𝜚 ࣪˖ ִ𐙚   |  RIOTOUS ：CATALOGUE {E3}"
 )
 
 PRICELIST_TEXT = (
