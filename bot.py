@@ -213,8 +213,8 @@ CV_GADAI_TEXT = (
     f"by : @jastipperi {E3}"
 )
 
-FORMAT_PAGE1_TEXT = f"✨ <b>Format Layanan</b> — Halaman 1\n\nPilih layanan yang kamu inginkan yuk Kak! {E3}"
-FORMAT_PAGE2_TEXT = f"✨ <b>Format Layanan</b> — Halaman 2\n\nMasih banyak lagi nih Kak! {E3}"
+FORMAT_PAGE1_TEXT = f"✨ <b>Format Layanan</b> — Halaman 1\n\nPilih layanan yang kamu inginkan yuk! {E3}"
+FORMAT_PAGE2_TEXT = f"✨ <b>Format Layanan</b> — Halaman 2\n\nMasih banyak lagi nih! {E3}"
 
 FORMAT_TEMPLATES = {
     "jastip_gift": (
@@ -226,8 +226,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ fix price &amp; nett price ⌲ \n"
         f" ૮◟ detail ⌲ ( nomin/min, avneg, avail nyicil, keep wdp ) \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
-        f"KETERANGAN : #READY\n\n"
+        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ\n\n"
+        f"KETERANGAN : #READY</code> {E3}\n\n"
     ),
     "jastip_nokprem": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP NOKPREM\n"
@@ -237,8 +237,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
-        f"KETERANGAN : #READY\n\n"
+        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ\n\n"
+        f"KETERANGAN : #READY</code> {E3}\n\n"
     ),
     "jastip_acc_inc": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP ACC INC GIFT LIMITED\n"
@@ -248,8 +248,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include &amp; detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
-        f"KETERANGAN : #READY\n\n"
+        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ\n\n"
+        f"KETERANGAN : #READY</code> {E3}\n\n"
     ),
     "jastip_ch_store": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP CHANNEL STORE\n"
@@ -262,8 +262,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include &amp; detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
-        f"KETERANGAN : #READY\n\n"
+        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ\n\n"
+        f"KETERANGAN : #READY</code> {E3}\n\n"
     ),
     "jastip_ch_pribadi": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP CHANNEL PRIBADI\n"
@@ -275,8 +275,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include &amp; detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
-        f"KETERANGAN : #READY\n\n"
+        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ\n\n"
+        f"KETERANGAN : #READY</code> {E3}\n\n"
     ),
     "jastip_gc_ress": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP GC RESSELLER\n"
@@ -289,8 +289,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include &amp; detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
-        f"KETERANGAN : #READY\n\n"
+        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ\n\n"
+        f"KETERANGAN : #READY</code> {E3}\n\n"
     ),
     "jastip_acc_game": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP ACC GAME\n"
@@ -300,8 +300,8 @@ FORMAT_TEMPLATES = {
         f" ૮◟ include &amp; detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
-        f"KETERANGAN : #READY\n\n"
+        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ\n\n"
+        f"KETERANGAN : #READY</code> {E3}\n\n"
     ),
     "jastip_acc_sosmed": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASTIP ACC SOSMED\n"
@@ -311,92 +311,10 @@ FORMAT_TEMPLATES = {
         f" ૮◟ detail  ⌲\n"
         f" ૮◟ price ⌲ \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ</code> {E3}"
-        f"KETERANGAN : #READY\n\n"
-    ),
-    "jaseb_gift": (
-        f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASEB OFFER GIFT UPGRADE\n"
-        f"𐙚. AUTOCOPY ALERT\n\n"
-        f"Hello, I'm  want to fill my needs forum with the following!\n"
-        f" ૮◟ link gift ⌲ \n"
-        f" ૮◟ link offeran  ⌲\n"
-        f" ૮◟ end ⌲  \n"
-        f" ૮◟ purchase contact  ⌲ @</code>\n\n"
-        f"<i>Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous ꩜.ᐟ</i>\n\n"
-        f"CARD  ─────  66\" ..  ꩜.ᐟ 形状\n"
-        f"<i>Eldritch symposium sways,\nRiven with argentine veins.</i> {E3}"
-    ),
-    "gadai_gift": (
-        f"<code>. ᕱ⑅︎ᕱ   ⌕  ── GADAI GIFT UPGRADE\n"
-        f"𐙚. AUTOCOPY ALERT\n\n"
-        f"Hello, I'm  want to fill my needs forum with the following!\n"
-        f" ૮◟ jenis gift ⌲  \n"
-        f" ૮◟ link ⌲\n"
-        f" ૮◟ contact  ⌲ @</code>\n\n"
-        f"CARD  ─────  66\" ..  ꩜.ᐟ 形状\n"
-        f"<i>Eldritch symposium sways,\nRiven with argentine veins.</i> {E3}"
-    ),
-    "jasa_jubel": (
-        f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASA JUBEL GIFT MARKET PLACE\n"
-        f"𐙚. AUTOCOPY ALERT\n\n"
-        f"Hello, I'm  want to fill my needs forum with the following!\n"
-        f" ૮◟ jenis gift ⌲  \n"
-        f" ૮◟ link ⌲\n"
-        f" ૮◟ login/nolog ⌲\n"
-        f" ૮◟ contact  ⌲ @</code>\n\n"
-        f"CARD  ─────  66\" ..  ꩜.ᐟ 形状\n"
-        f"<i>Eldritch symposium sways,\nRiven with argentine veins.</i> {E3}"
-    ),
-    "cek_range": (
-        f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASA CEK RANGE GIFT\n"
-        f"𐙚. AUTOCOPY ALERT\n\n"
-        f"Hello, I'm  want to fill my needs forum with the following!\n"
-        f" ૮◟ jenis gift ⌲  \n"
-        f" ૮◟ link ⌲\n"
-        f" ૮◟ contact  ⌲ @</code>\n\n"
-        f"CARD  ─────  66\" ..  ꩜.ᐟ 形状\n"
-        f"<i>Eldritch symposium sways,\nRiven with argentine veins.</i> {E3}"
-    ),
-    "teleprem_login": (
-        f"<code>. ᕱ⑅︎ᕱ   ⌕  ── TELEPREM VIA LOGIN\n"
-        f"𐙚. AUTOCOPY ALERT\n\n"
-        f"Hello, I'm  want to fill my needs forum with the following!\n"
-        f" ૮◟ nama &amp; username  ⌲ \n"
-        f" ૮◟ usn akun yg di prem  ⌲\n"
-        f" ૮◟ durasi ⌲ \n"
-        f" ૮◟ nomor tele ⌲ \n"
-        f" ૮◟ pw 2 step verif  ⌲ (kalo ada) \n"
-        f" ૮◟ payment ⌲</code>\n\n"
-        f"CARD  ─────  66\" ..  ꩜.ᐟ 形状\n"
-        f"<i>Eldritch symposium sways,\nRiven with argentine veins.</i> {E3}"
-    ),
-    "teleprem_gift": (
-        f"<code>. ᕱ⑅︎ᕱ   ⌕  ── TELEPREM VIA GIFT\n"
-        f"𐙚. AUTOCOPY ALERT\n\n"
-        f"Hello, I'm  want to fill my needs forum with the following!\n"
-        f" ૮◟ nama &amp; username  ⌲ \n"
-        f" ૮◟ usn akun yg di prem  ⌲\n"
-        f" ૮◟ durasi ⌲ \n"
-        f" ૮◟ nomor tele ⌲ \n"
-        f" ૮◟ pw 2 step verif  ⌲ (kalo ada) \n"
-        f" ૮◟ payment ⌲</code>\n\n"
-        f"CARD  ─────  66\" ..  ꩜.ᐟ 形状\n"
-        f"<i>Eldritch symposium sways,\nRiven with argentine veins.</i> {E3}"
-    ),
-    "topup_stars": (
-        f"<code>. ᕱ⑅︎ᕱ   ⌕  ── TOPUP STARS/GIFT\n"
-        f"𐙚. AUTOCOPY ALERT\n\n"
-        f"Hello, I'm  want to fill my needs forum with the following!\n"
-        f" ૮◟ nama &amp; username  ⌲ \n"
-        f" ૮◟ jumlah order  ⌲\n"
-        f" ૮◟ gift/topup  ⌲ \n"
-        f" ૮◟ emoji + note ( jika gift ) ⌲\n"
-        f" ૮◟ payment ⌲</code>\n\n"
-        f"CARD  ─────  66\" ..  ꩜.ᐟ 形状\n"
-        f"<i>Eldritch symposium sways,\nRiven with argentine veins.</i> {E3}"
+        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ\n\n"
+        f"KETERANGAN : #READY</code> {E3}\n\n"
     ),
 }
-
 waiting_order = {}
 order_message_map = {}
 photo_message_map = {}  # simpan (chat_id, foto_msg_id, teks_msg_id) per user
