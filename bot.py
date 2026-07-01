@@ -319,18 +319,16 @@ FORMAT_TEMPLATES = {
         f"KETERANGAN : #READY</code> {E3}\n\n"
     ),
 
-    # ── HALAMAN 2 (sebelumnya semua MISSING, sekarang sudah ada) ─────────
+    # ── HALAMAN 2 ─────────
     "jaseb_gift": (
-        f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASEB OFFER GIFT\n"
+        f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASEB OFFER GIFT UPGRADE\n"
         f"𐙚. AUTOCOPY ALERT\n\n"
         f"Hello, I'm  want to fill my needs forum with the following!\n"
-        f" ૮◟ jenis gift ⌲ \n"
-        f" ૮◟ link gift ⌲\n"
-        f" ૮◟ harga offer ⌲ \n"
-        f" ૮◟ detail gift ⌲ ( nomin, avneg, kondisi )\n"
+        f" ૮◟ link gift ⌲ \n"
+        f" ૮◟ link offeran  ⌲\n"
+        f" ૮◟ end ⌲  \n"
         f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ\n\n"
-        f"KETERANGAN : #READY</code> {E3}\n\n"
+        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous ꩜.ᐟ</code> {E3}\n\n"
     ),
     "gadai_gift": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── GADAI GIFT UPGRADE\n"
@@ -355,15 +353,27 @@ FORMAT_TEMPLATES = {
         f"Eldritch symposium sways,\n"
         f"Riven with argentine veins.</code> {E3}\n\n"
     ),
+    "cv_gift_idr": (
+        f"<code>. ᕱ⑅︎ᕱ   ⌕  ── CV GIFT UPG TO IDR\n"
+        f"𐙚. AUTOCOPY ALERT\n\n"
+        f"Hello, I'm  want to fill my needs forum with the following!\n"
+        f" ૮◟ jenis gift ⌲  \n"
+        f" ૮◟ link ⌲\n"
+        f" ૮◟ contact  ⌲ @\n\n"
+        f"CARD  ─────  66\" ..  ꩜.ᐟ 形状\n"
+        f"Eldritch symposium sways,\n"
+        f"Riven with argentine veins.</code> {E3}\n\n"
+    ),
     "cek_range": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── JASA CEK RANGE GIFT\n"
         f"𐙚. AUTOCOPY ALERT\n\n"
         f"Hello, I'm  want to fill my needs forum with the following!\n"
-        f" ૮◟ jenis gift ⌲ \n"
-        f" ૮◟ link gift ⌲\n"
-        f" ૮◟ purchase contact  ⌲ @\n\n"
-        f"Note: pihak kami hanya sebatas perantara, have no responsibility, dengan barang yg di jualkan. jadi, agar terhindar dari kasus clonning &amp; penipuan wajib menggunakan rekber @rekberfamous atau jika belum terlalu paham rekber bisa di tanyakan terlebih dahulu ke @jastipperibot ꩜.ᐟ\n\n"
-        f"KETERANGAN : #READY</code> {E3}\n\n"
+        f" ૮◟ jenis gift ⌲  \n"
+        f" ૮◟ link ⌲\n"
+        f" ૮◟ contact  ⌲ @\n\n"
+        f"CARD  ─────  66\" ..  ꩜.ᐟ 形状\n"
+        f"Eldritch symposium sways,\n"
+        f"Riven with argentine veins.</code> {E3}\n\n"
     ),
     "teleprem_login": (
         f"<code>. ᕱ⑅︎ᕱ   ⌕  ── TELEPREM VIA LOGIN\n"
@@ -538,13 +548,14 @@ def format_page_2_keyboard():
         ],
         [
             InlineKeyboardButton("🛒 jasa jubel marketplace", callback_data="fmt_jasa_jubel"),
+            InlineKeyboardButton("💱 cv gift to idr", callback_data="fmt_cv_gift_idr"),
+        ],
+        [
             InlineKeyboardButton("🔍 cek range gift", callback_data="fmt_cek_range"),
-        ],
-        [
             InlineKeyboardButton("🔐 teleprem via login", callback_data="fmt_teleprem_login"),
-            InlineKeyboardButton("🎁 teleprem via gift", callback_data="fmt_teleprem_gift"),
         ],
         [
+            InlineKeyboardButton("🎁 teleprem via gift", callback_data="fmt_teleprem_gift"),
             InlineKeyboardButton("⭐ topup stars/gift", callback_data="fmt_topup_stars"),
         ],
         [
